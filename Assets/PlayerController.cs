@@ -32,12 +32,12 @@ public class PlayerController : MonoBehaviour
             //Rotate left when A is down
             if (Input.GetKey(KeyCode.A))
             {
-                transform.rotation = Quaternion.Euler(0, 0, transform.eulerAngles.z + 2f);
+                transform.rotation = Quaternion.Euler(0, 0, transform.eulerAngles.z + 1f);
             }
             //Rotate right when D is down
             if (Input.GetKey(KeyCode.D))
             {
-                transform.rotation = Quaternion.Euler(0, 0, transform.eulerAngles.z - 2f);
+                transform.rotation = Quaternion.Euler(0, 0, transform.eulerAngles.z - 1f);
             }
         }
     }
