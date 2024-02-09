@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown("space"))
             {
                 canLaunch = false;
-                rb.drag = 0.1f;
+                rb.drag = 0.5f;
                 //Impulse to apply force once rather than over time
                 rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);
 
