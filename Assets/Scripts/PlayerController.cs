@@ -4,63 +4,89 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody2D rb;
-    public float thrust;
-    Vector2 lastVelocity;
-    bool canLaunch = true;
+    public Rigidbody2D rb;
+    public float initialThrust = 5f;
+    public float maxThrust = 10f;
+    public float rotationSpeed = 100f;
+    public float cooldownTime = 2f; // Cooldown time in seconds before the ship can launch again
+
+    private float thrust;
+
+    private Vector2 lastVelocity;
+    private bool canLaunch = true;
+    private float cooldownTimer;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        thrust = initialThrust;
     }
 
     void Update()
     {
-        //most recent velocity
+        // Track the ship's most recent velocity
         lastVelocity = rb.velocity;
 
-        //Only accept input if ship has not been launched
-        if(canLaunch)
+        // Cooldown timer to control re-launch availability
+        if (!canLaunch)
         {
-            //Launch when space is pressed
-            if (Input.GetKeyDown("space"))
+            cooldownTimer += Time.deltaTime;
+            if (cooldownTimer >= cooldownTime)
+            {
+                canLaunch = true;
+                cooldownTimer = 0;
+            }
+        }
+
+        // Only accept input if ship has not been launched
+        if (canLaunch)
+        {
+            // Increase thrust while holding down space, up to a maximum
+            if (Input.GetKey(KeyCode.Space))
+            {
+                thrust = Mathf.Min(thrust + Time.deltaTime * initialThrust, maxThrust);
+            }
+
+            // Launch when space is released
+            if (Input.GetKeyUp(KeyCode.Space))
             {
                 canLaunch = false;
-                rb.drag = 0.5f;
-                //Impulse to apply force once rather than over time
+                rb.drag = 0.5f; // Adjust drag for gameplay
                 rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);
+                thrust = initialThrust; // Reset thrust after launch
+            }
 
-            }
-            //Rotate left when A is down
-            if (Input.GetKey(KeyCode.A))
-            {
-                transform.rotation = Quaternion.Euler(0, 0, transform.eulerAngles.z + 0.5f);
-            }
-            //Rotate right when D is down
-            if (Input.GetKey(KeyCode.D))
-            {
-                transform.rotation = Quaternion.Euler(0, 0, transform.eulerAngles.z - 0.5f);
-            }
+            // Smooth rotation control
+            float rotation = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
+            transform.Rotate(0, 0, -rotation);
         }
         else
         {
-            if(rb.velocity == Vector2.zero)
-            {
-                Debug.Log("CanLaunch");
-                canLaunch = true;
-            }
+            // Adjust drag based on velocity to simulate space friction or resistance
+            rb.drag = rb.velocity.magnitude > 0.1 ? 0.1f : 1f;
         }
     }
+
+        public float Thrust
+    {
+        get { return thrust; }
+        set { thrust = Mathf.Clamp(value, 0, maxThrust); } // Ensure thrust stays within expected bounds
+    }
+
     void OnCollisionEnter2D(Collision2D col)
     {
-        //Reflects the angle of the ships velocity
+        // Reflects the angle of the ship's velocity and simulates a bounce effect
         var speed = lastVelocity.magnitude;
         var direction = Vector2.Reflect(lastVelocity.normalized, col.contacts[0].normal);     
-        rb.velocity = direction * speed;
-        rb.drag = 1;
+        rb.velocity = direction * Mathf.Max(speed, 1); // Ensure there's always some movement after collision
 
-        //Ship starts spinning after collision and I don't know why but this fixes it
-        float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
+        // Corrects ship's rotation to match the new direction
+        AdjustRotationAfterCollision(direction);
+    }
+
+    private void AdjustRotationAfterCollision(Vector2 direction)
+    {
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
     }
 }
