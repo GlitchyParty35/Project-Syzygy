@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float thrust;
     Vector2 lastVelocity;
     bool canLaunch = true;
+    public LaunchButton LB;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown("space"))
             {
                 canLaunch = false;
+                LB.LaunchOn = false;
                 rb.drag = 0.5f;
                 //Impulse to apply force once rather than over time
                 rb.AddForce(transform.up * thrust, ForceMode2D.Impulse);
@@ -47,6 +49,7 @@ public class PlayerController : MonoBehaviour
             if(rb.velocity == Vector2.zero)
             {
                 Debug.Log("CanLaunch");
+                LB.LaunchOn = true;
                 canLaunch = true;
             }
         }
