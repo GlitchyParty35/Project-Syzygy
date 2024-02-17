@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float maxThrust = 50f;
     public float rotationSpeed = 100f;
     public float cooldownTime = 4f; // Cooldown time in seconds before the ship can launch again
+    
+    //Probably a better way of accessing UI elements than this 
     public ThrustBar thrustMeter; //Thrust bar UI
     public LaunchButton launchButton; //Launch Button UI
 
@@ -82,13 +84,16 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        // Reflects the angle of the ship's velocity and simulates a bounce effect
-        var speed = lastVelocity.magnitude;
-        var direction = Vector2.Reflect(lastVelocity.normalized, col.contacts[0].normal);
-        rb.velocity = direction * Mathf.Max(speed, 1); // Ensure there's always some movement after collision
+        if (col.gameObject.tag == ("Wall"))
+        {
+            // Reflects the angle of the ship's velocity and simulates a bounce effect
+            var speed = lastVelocity.magnitude;
+            var direction = Vector2.Reflect(lastVelocity.normalized, col.contacts[0].normal);
+            rb.velocity = direction * Mathf.Max(speed, 1); // Ensure there's always some movement after collision
 
-        // Corrects ship's rotation to match the new direction
-        AdjustRotationAfterCollision(direction);
+            // Corrects ship's rotation to match the new direction
+            AdjustRotationAfterCollision(direction);
+        }
     }
 
     private void AdjustRotationAfterCollision(Vector2 direction)
