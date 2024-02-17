@@ -5,17 +5,10 @@ using UnityEngine.UI;
 
 public class LaunchButton : MonoBehaviour
 {
-    //public Image image;
-    public bool LaunchOn = true;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void LaunchState(bool state)
     {
-        if(LaunchOn)
+        if (state)
         {
             gameObject.GetComponent<Image>().color = new Color32(255, 255, 225, 255);
         }

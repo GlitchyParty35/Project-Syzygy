@@ -6,9 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D rb;
     public float initialThrust = 5f;
-    public float maxThrust = 10f;
+    public float maxThrust = 50f;
     public float rotationSpeed = 100f;
-    public float cooldownTime = 2f; // Cooldown time in seconds before the ship can launch again
+    public float cooldownTime = 4f; // Cooldown time in seconds before the ship can launch again
+    public ThrustBar thrustMeter; //Thrust bar UI
+    public LaunchButton launchButton; //Launch Button UI
 
     private Vector2 lastVelocity;
     private bool canLaunch = true;
@@ -41,6 +43,7 @@ public class PlayerController : MonoBehaviour
             if (cooldownTimer >= cooldownTime)
             {
                 canLaunch = true;
+                launchButton.LaunchState(canLaunch); //Update launch button UI
                 cooldownTimer = 0;
             }
         }
@@ -51,13 +54,16 @@ public class PlayerController : MonoBehaviour
             // Increase thrust while holding down space, up to a maximum
             if (Input.GetKey(KeyCode.Space))
             {
-                _thrust = Mathf.Min(_thrust + Time.deltaTime * initialThrust, maxThrust);
+                _thrust = Mathf.Min(_thrust + Time.deltaTime * initialThrust * 4, maxThrust);
+                thrustMeter.updateMeter(_thrust); //Update the level of the UI meter to show thrust power
             }
 
             // Launch when space is released
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 canLaunch = false;
+                launchButton.LaunchState(canLaunch); //Update launch button UI
+                thrustMeter.updateMeter(0); //Reset thrust meter display after launch
                 rb.drag = 0.5f; // Adjust drag for gameplay
                 rb.AddForce(transform.up * _thrust, ForceMode2D.Impulse);
                 _thrust = initialThrust; // Reset _thrust after launch
