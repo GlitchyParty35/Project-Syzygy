@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4443501410528745347}
   - component: {fileID: 1001894582102198842}
   - component: {fileID: 195025606103838299}
+  - component: {fileID: 4087197208109717427}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -101,8 +102,35 @@ MonoBehaviour:
   target: {fileID: 0}
   projectile: {fileID: 5436427102684021194, guid: 395b682a57b5ca243b0bdbfb327df2c6, type: 3}
   spawnPos: {fileID: 5198376560164230315}
-  launchSpeed: 50
+  launchSpeed: 500
   maxCoolDown: 3
+--- !u!50 &4087197208109717427
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2772754874587710269}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &6031228954627615825
 GameObject:
   m_ObjectHideFlags: 0
