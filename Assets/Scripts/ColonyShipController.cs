@@ -7,6 +7,7 @@ public class ColonyShipController : MonoBehaviour
    
     private Rigidbody2D rb;
     private Vector3 myPosition;
+    private Quaternion myRotation;
 
     void Start()
     {
@@ -15,6 +16,7 @@ public class ColonyShipController : MonoBehaviour
     void Update()
     {
         myPosition = transform.position;
+        myRotation = transform.rotation.normalized;
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -43,6 +45,7 @@ public class ColonyShipController : MonoBehaviour
             {
                 rb.velocity *= 0;
                 Vector3 colPosition = collision.gameObject.transform.position;
+                Quaternion colRotation = collision.gameObject.transform.rotation.normalized;
                 if (myPosition.x > colPosition.x)
                 {
                     myPosition = colPosition;
@@ -53,6 +56,8 @@ public class ColonyShipController : MonoBehaviour
                     myPosition = colPosition;
                     myPosition.x -= 2;
                 }
+                myRotation = colRotation;
+                transform.rotation = myRotation;
                 transform.position = myPosition;
                 Destroy(rb); // Consider alternatives to destroying the Rigidbody to avoid potential issues
                 transform.parent = collision.gameObject.transform;
