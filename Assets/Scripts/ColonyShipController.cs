@@ -37,18 +37,22 @@ public class ColonyShipController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("ColonyShip"))
+    if (collision.gameObject.CompareTag("ColonyShip"))
         {
             if (rb.velocity.magnitude != 0)
             {
                 rb.velocity *= 0;
                 Vector3 colPosition = collision.gameObject.transform.position;
                 myPosition = colPosition;
-                myPosition.x += 2;
+                myPosition.x += 2; // Adjust this value as needed for correct positioning
                 transform.position = myPosition;
-                Destroy(rb);
+                Destroy(rb); // Consider alternatives to destroying the Rigidbody to avoid potential issues
                 transform.parent = collision.gameObject.transform;
+
+                // Notify the GameManager that a ship has been aligned
+                GameManager.instance.AddAlignedShip();
             }
         }
     }
+
 }
