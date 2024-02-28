@@ -43,3 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Pixel
+    uniqueID: 2724599801
+    locked: 0
+  - name: Base
+    uniqueID: 1141301611
+    locked: 0
