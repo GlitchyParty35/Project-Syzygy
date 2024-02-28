@@ -43,8 +43,16 @@ public class ColonyShipController : MonoBehaviour
             {
                 rb.velocity *= 0;
                 Vector3 colPosition = collision.gameObject.transform.position;
-                myPosition = colPosition;
-                myPosition.x += 2; // Adjust this value as needed for correct positioning
+                if (myPosition.x > colPosition.x)
+                {
+                    myPosition = colPosition;
+                    myPosition.x += 2; // Adjust this value as needed for correct positioning
+                }
+                else
+                {
+                    myPosition = colPosition;
+                    myPosition.x -= 2;
+                }
                 transform.position = myPosition;
                 Destroy(rb); // Consider alternatives to destroying the Rigidbody to avoid potential issues
                 transform.parent = collision.gameObject.transform;
