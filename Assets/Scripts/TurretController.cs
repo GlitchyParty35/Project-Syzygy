@@ -23,42 +23,44 @@ public class TurretController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        Vector2 pos = transform.position; //easier position reference
-        Vector2 direction = new Vector2(target.position.x - pos.x, target.position.y - pos.y); //direction towards player
-        RaycastHit2D lookingForPlayer = Physics2D.Raycast(transform.position, direction); //raycast in direction of player
-
-        //check if raycast hit player
-        if (lookingForPlayer.collider.tag == "Player" )
-        {          
-            active = true; //set turret active
-        }
-        else {  active = false; } //set turret deactive
-        
-        //only do if turret is active
-        if (active)
+        if (target != null) //make sure player exists
         {
-            
-            transform.up = direction; //look towards target
+            Vector2 pos = transform.position; //easier position reference
+            Vector2 direction = new Vector2(target.position.x - pos.x, target.position.y - pos.y); //direction towards player
+            RaycastHit2D lookingForPlayer = Physics2D.Raycast(transform.position, direction); //raycast in direction of player
 
-            if (!coolingDown)
+            //check if raycast hit player
+            if (lookingForPlayer.collider.tag == "Player")
             {
-                {
-                    Debug.Log("fired");
-                    GameObject bullet = Instantiate(projectile, spawnPos.position, transform.rotation); //spawn projectile
-
-                    bullet.GetComponent<Rigidbody2D>().AddForce(transform.up * launchSpeed); //addforce to projectile
-
-                    coolingDown = true;
-                    cooldownTime = maxCoolDown;
-                }
+                active = true; //set turret active
             }
-            else
+            else { active = false; } //set turret deactive
+
+            //only do if turret is active
+            if (active)
             {
-                cooldownTime -= Time.deltaTime;
-                if (cooldownTime <= 0)
+
+                transform.up = direction; //look towards target
+
+                if (!coolingDown)
                 {
-                    coolingDown = false;
+                    {
+                        Debug.Log("fired");
+                        GameObject bullet = Instantiate(projectile, spawnPos.position, transform.rotation); //spawn projectile
+
+                        bullet.GetComponent<Rigidbody2D>().AddForce(transform.up * launchSpeed); //addforce to projectile
+
+                        coolingDown = true;
+                        cooldownTime = maxCoolDown;
+                    }
+                }
+                else
+                {
+                    cooldownTime -= Time.deltaTime;
+                    if (cooldownTime <= 0)
+                    {
+                        coolingDown = false;
+                    }
                 }
             }
         }

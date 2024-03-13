@@ -1655,7 +1655,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082396604}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1082396606
 Camera:
   m_ObjectHideFlags: 0
@@ -1988,6 +1988,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 2772754874587710269, guid: 03fe9fc4664af7c44a82d6c8cdb58da1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4443501410528745347, guid: 03fe9fc4664af7c44a82d6c8cdb58da1,
         type: 3}

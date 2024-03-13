@@ -6,8 +6,10 @@ public class Destructable_Rigid_Body : MonoBehaviour
 {
 
     [SerializeField]
-    Vector2 forceDirection;
+    float forceLevel;
 
+    [SerializeField]
+    Vector3 dir;
     [SerializeField]
     float torque;
 
@@ -16,8 +18,10 @@ public class Destructable_Rigid_Body : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Vector3 dir = -transform.right + transform.up;
+        Debug.Log(dir);
         rb2d = GetComponent<Rigidbody2D>();
-        rb2d.AddForce(forceDirection);
+        rb2d.AddRelativeForce(dir * forceLevel, ForceMode2D.Impulse);
         rb2d.AddTorque(torque);
     }
 }

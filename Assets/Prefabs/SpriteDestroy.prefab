@@ -125,8 +125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceDirection: {x: 120, y: -20}
-  torque: 20
+  forceLevel: 0.5
+  dir: {x: 1, y: 0.5, z: 0}
+  torque: 15
 --- !u!1 &3753480056504505950
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceDirection: {x: -10, y: -100}
+  forceLevel: 1
+  dir: {x: 0, y: -1, z: 0}
   torque: 20
 --- !u!1 &4064031455702593412
 GameObject:
@@ -379,7 +381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceDirection: {x: -50, y: -30}
+  forceLevel: 1.5
+  dir: {x: -1, y: -0.5, z: 0}
   torque: -30
 --- !u!1 &4453362582854957433
 GameObject:
@@ -506,7 +509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceDirection: {x: -30, y: -120}
+  forceLevel: 1.5
+  dir: {x: 0, y: -1, z: 0}
   torque: -20
 --- !u!1 &5268542321554003748
 GameObject:
@@ -633,8 +637,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceDirection: {x: 20, y: 100}
-  torque: 10
+  forceLevel: 1
+  dir: {x: 0, y: 1, z: 0}
+  torque: 0
 --- !u!1 &5816759332069612238
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,8 +765,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceDirection: {x: 20, y: 110}
-  torque: 15
+  forceLevel: 0.7
+  dir: {x: -0.25, y: 1, z: 0}
+  torque: 20
 --- !u!1 &5956662118240662303
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,7 +932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceDirection: {x: -100, y: 50}
+  forceLevel: 1
+  dir: {x: -1, y: 0, z: 0}
   torque: -20
 --- !u!1 &9010792732630188994
 GameObject:
@@ -1053,5 +1060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceDirection: {x: 120, y: 20}
+  forceLevel: 1
+  dir: {x: 1, y: 0, z: 0}
   torque: 30

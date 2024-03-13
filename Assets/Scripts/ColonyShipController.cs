@@ -16,9 +16,12 @@ public class ColonyShipController : MonoBehaviour
     }
     void Update()
     {
-        myPosition = transform.position;
-        myRotation = transform.rotation.normalized;
-        lastVelocity = rb.velocity;
+        if (rb != null)
+        {
+            myPosition = transform.position;
+            myRotation = transform.rotation.normalized;
+            lastVelocity = rb.velocity;
+        }
     }
 
     private void AdjustRotationAfterCollision(Vector2 direction)
@@ -40,19 +43,21 @@ public class ColonyShipController : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Player"))
         {
-            if(rb != null)
+            if (collision.gameObject != null)
             {
-                Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
 
-                // Calculate the momentum transfer (halved) from the player to the asteroid
-                Vector2 momentumTransfer = playerRb.velocity * 0.6f;
-                rb.velocity += momentumTransfer;
+                    // Calculate the momentum transfer (halved) from the player to the asteroid
+                    Vector2 momentumTransfer = playerRb.velocity * 0.6f;
+                    rb.velocity += momentumTransfer;
 
-                // Slow the player by half
-                playerRb.velocity *= 0.5f;
+                    // Slow the player by half
+                    playerRb.velocity *= 0.5f;
+                }
             }
-        }
-        
+        }        
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
