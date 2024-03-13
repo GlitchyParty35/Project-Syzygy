@@ -13,6 +13,12 @@ public class PlayerController : MonoBehaviour
     public float maxThrust = 50f;
     public float rotationSpeed = 100f;
     public float cooldownTime = 4f; // Cooldown time in seconds before the ship can launch again
+
+    [SerializeField]
+    int health = 1;
+
+    [SerializeField]
+    Object destructableRef;
     
     //Probably a better way of accessing UI elements than this 
     public ThrustBar thrustMeter; //Thrust bar UI
@@ -124,6 +130,11 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        health -= 1;
+        if (health <= 0)
+        {
+            ExplodeThisGameObject();
+        }
         if (col.gameObject.tag == ("Wall"))
         {
             // Reflects the angle of the ship's velocity and simulates a bounce effect
@@ -134,6 +145,18 @@ public class PlayerController : MonoBehaviour
             // Corrects ship's rotation to match the new direction
             AdjustRotationAfterCollision(direction);
         }
+    }
+
+    private void ExplodeThisGameObject()
+    {
+        
+        GameObject destructable = (GameObject)Instantiate(destructableRef);
+
+        Vector3 eulerRotation = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z);
+        destructable.transform.position = transform.position;
+        destructable.transform.rotation = Quaternion.Euler(eulerRotation);
+
+        Destroy(gameObject);
     }
 
     void OnGUI()

@@ -561,6 +561,9 @@ MonoBehaviour:
   maxThrust: 50
   rotationSpeed: 100
   cooldownTime: 4
+  health: 1
+  destructableRef: {fileID: 5956662118240662303, guid: e405d147cc598844fb52a494dcbcec04,
+    type: 3}
   thrustMeter: {fileID: 593183873}
   launchButton: {fileID: 604410064}
 --- !u!212 &540240977
@@ -1952,8 +1955,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 195025606103838299, guid: 03fe9fc4664af7c44a82d6c8cdb58da1,
         type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 540240978}
+    - target: {fileID: 195025606103838299, guid: 03fe9fc4664af7c44a82d6c8cdb58da1,
+        type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 195025606103838299, guid: 03fe9fc4664af7c44a82d6c8cdb58da1,
         type: 3}
@@ -2807,7 +2815,7 @@ GameObject:
   - component: {fileID: 1904556299}
   - component: {fileID: 1904556300}
   m_Layer: 0
-  m_Name: Spirte
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2869,7 +2877,7 @@ SpriteRenderer:
   m_SortingLayerID: 1141301611
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2d45993e6a77e7c478cd765f9982c05b, type: 3}
+  m_Sprite: {fileID: -66164611, guid: 078157d4c4de75449b3d1e1c463aefc9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
