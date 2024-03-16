@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1051196259171398932}
   - component: {fileID: 5115751210544690189}
   - component: {fileID: 3179630123640474471}
+  - component: {fileID: 6137699165530496111}
   m_Layer: 0
   m_Name: RocketSpriteSheet_4
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1053525216429475166}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.96, y: -0.33, z: 0}
+  m_LocalPosition: {x: 0.96, y: 0.01999998, z: 0}
   m_LocalScale: {x: 0.8307503, y: 0.8307503, z: 0.8307503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -125,9 +126,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceLevel: 0.5
-  dir: {x: 1, y: 0.5, z: 0}
+  forceLevel: 1
+  dir: {x: 1, y: -0.25, z: 0}
   torque: 15
+--- !u!58 &6137699165530496111
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053525216429475166}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.93
 --- !u!1 &3753480056504505950
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +176,7 @@ GameObject:
   - component: {fileID: 6469203651323413298}
   - component: {fileID: 8305246193424853149}
   - component: {fileID: 1886867228838137849}
+  - component: {fileID: 6377940096519948962}
   m_Layer: 0
   m_Name: RocketSpriteSheet_6
   m_TagString: Untagged
@@ -156,7 +193,7 @@ Transform:
   m_GameObject: {fileID: 3753480056504505950}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.65, z: 0}
+  m_LocalPosition: {x: 0, y: -0.29999998, z: 0}
   m_LocalScale: {x: 0.8307503, y: 0.8307503, z: 0.8307503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -254,8 +291,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceLevel: 1
-  dir: {x: 0, y: -1, z: 0}
+  dir: {x: -0.25, y: -1, z: 0}
   torque: 20
+--- !u!58 &6377940096519948962
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3753480056504505950}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.0000009536743}
+  serializedVersion: 2
+  m_Radius: 0.76
 --- !u!1 &4064031455702593412
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +340,7 @@ GameObject:
   - component: {fileID: 3727377836480172312}
   - component: {fileID: 8363867696532821448}
   - component: {fileID: 1638435459331651101}
+  - component: {fileID: 4283103693956951340}
   m_Layer: 0
   m_Name: RocketSpriteSheet_5
   m_TagString: Untagged
@@ -284,7 +357,7 @@ Transform:
   m_GameObject: {fileID: 4064031455702593412}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.68, y: -0.99, z: 0}
+  m_LocalPosition: {x: -1.68, y: -0.64, z: 0}
   m_LocalScale: {x: 0.8307503, y: 0.8307503, z: 0.8307503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -381,9 +454,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceLevel: 1.5
-  dir: {x: -1, y: -0.5, z: 0}
-  torque: -30
+  forceLevel: 1
+  dir: {x: -1, y: -0.25, z: 0}
+  torque: 25
+--- !u!58 &4283103693956951340
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4064031455702593412}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.0000009536743}
+  serializedVersion: 2
+  m_Radius: 0.72
 --- !u!1 &4453362582854957433
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +504,7 @@ GameObject:
   - component: {fileID: 6587889243518539385}
   - component: {fileID: 3979612657526627912}
   - component: {fileID: 5491206021268948521}
+  - component: {fileID: 8167652363718041567}
   m_Layer: 0
   m_Name: RocketSpriteSheet_8
   m_TagString: Untagged
@@ -412,7 +521,7 @@ Transform:
   m_GameObject: {fileID: 4453362582854957433}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -1.14, z: 0}
+  m_LocalPosition: {x: 0, y: -0.78999996, z: 0}
   m_LocalScale: {x: 0.8307503, y: 0.8307503, z: 0.8307503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -509,9 +618,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceLevel: 1.5
-  dir: {x: 0, y: -1, z: 0}
-  torque: -20
+  forceLevel: 1
+  dir: {x: 0.25, y: -1, z: 0}
+  torque: 20
+--- !u!58 &8167652363718041567
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4453362582854957433}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.03
 --- !u!1 &5268542321554003748
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +668,7 @@ GameObject:
   - component: {fileID: 8209675980007925344}
   - component: {fileID: 8086451631870993800}
   - component: {fileID: 378360154002307288}
+  - component: {fileID: 1582976289000794497}
   m_Layer: 0
   m_Name: RocketSpriteSheet_1
   m_TagString: Untagged
@@ -540,7 +685,7 @@ Transform:
   m_GameObject: {fileID: 5268542321554003748}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 1.08, z: 0}
+  m_LocalPosition: {x: 0.02, y: 1.43, z: 0}
   m_LocalScale: {x: 0.8307503, y: 0.8307503, z: 0.8307503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -639,7 +784,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceLevel: 1
   dir: {x: 0, y: 1, z: 0}
-  torque: 0
+  torque: 10
+--- !u!58 &1582976289000794497
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5268542321554003748}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000047683716, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.66
 --- !u!1 &5816759332069612238
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +832,7 @@ GameObject:
   - component: {fileID: 8500082401417206642}
   - component: {fileID: 5764096859803307264}
   - component: {fileID: 5669942640515352141}
+  - component: {fileID: 6441317998362532891}
   m_Layer: 0
   m_Name: RocketSpriteSheet_3
   m_TagString: Untagged
@@ -668,7 +849,7 @@ Transform:
   m_GameObject: {fileID: 5816759332069612238}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -0.07, z: 0}
+  m_LocalPosition: {x: 0.01, y: 0.28, z: 0}
   m_LocalScale: {x: 0.8307503, y: 0.8307503, z: 0.8307503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -765,9 +946,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d138deb6f9414043ba0018714426190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceLevel: 0.7
-  dir: {x: -0.25, y: 1, z: 0}
+  forceLevel: 1
+  dir: {x: 0.25, y: 1, z: 0}
   torque: 20
+--- !u!58 &6441317998362532891
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5816759332069612238}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000047683716, y: -0.0000009536743}
+  serializedVersion: 2
+  m_Radius: 0.76
 --- !u!1 &5956662118240662303
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +1035,7 @@ GameObject:
   - component: {fileID: 3870493474093496519}
   - component: {fileID: 446218882879937758}
   - component: {fileID: 3657462552609077928}
+  - component: {fileID: 1430440756079532524}
   m_Layer: 0
   m_Name: RocketSpriteSheet_2
   m_TagString: Untagged
@@ -835,7 +1052,7 @@ Transform:
   m_GameObject: {fileID: 8137642960316856200}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.95, y: -0.38, z: 0}
+  m_LocalPosition: {x: -0.95, y: -0.030000001, z: 0}
   m_LocalScale: {x: 0.8307503, y: 0.8307503, z: 0.8307503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -933,8 +1150,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceLevel: 1
-  dir: {x: -1, y: 0, z: 0}
-  torque: -20
+  dir: {x: -1, y: 0.25, z: 0}
+  torque: 15
+--- !u!58 &1430440756079532524
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8137642960316856200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.935
 --- !u!1 &9010792732630188994
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,6 +1199,7 @@ GameObject:
   - component: {fileID: 8669213819166009041}
   - component: {fileID: 239363543654885160}
   - component: {fileID: 1011392261174771480}
+  - component: {fileID: 7324204889802867423}
   m_Layer: 0
   m_Name: RocketSpriteSheet_7
   m_TagString: Untagged
@@ -963,7 +1216,7 @@ Transform:
   m_GameObject: {fileID: 9010792732630188994}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.68, y: -0.99, z: 0}
+  m_LocalPosition: {x: 1.68, y: -0.64, z: 0}
   m_LocalScale: {x: 0.8307503, y: 0.8307503, z: 0.8307503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1061,5 +1314,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceLevel: 1
-  dir: {x: 1, y: 0, z: 0}
+  dir: {x: 1, y: 0.25, z: 0}
   torque: 30
+--- !u!58 &7324204889802867423
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9010792732630188994}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.0000009536743}
+  serializedVersion: 2
+  m_Radius: 0.72

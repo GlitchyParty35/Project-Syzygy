@@ -129,7 +129,14 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D col)
-    {        
+    {               
+
+        health -= 1;
+        if (health <= 0)
+        {
+            ExplodeThisGameObject();
+        }
+
         if (col.gameObject.tag == ("Wall"))
         {
             // Reflects the angle of the ship's velocity and simulates a bounce effect
@@ -140,22 +147,13 @@ public class PlayerController : MonoBehaviour
             // Corrects ship's rotation to match the new direction
             AdjustRotationAfterCollision(direction);
         }
-
-        health -= 1;
-        if (health <= 0)
-        {
-            ExplodeThisGameObject();
-        }
     }
 
     private void ExplodeThisGameObject()
     {
-        
-        GameObject destructable = (GameObject)Instantiate(destructableRef);
+        Vector3 currRot = new Vector3(transform.localRotation.eulerAngles.x, transform.localRotation.eulerAngles.y, transform.localRotation.eulerAngles.z);
 
-        Vector3 eulerRotation = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z);
-        destructable.transform.position = transform.position;
-        destructable.transform.rotation = Quaternion.Euler(eulerRotation);
+        GameObject destructable = (GameObject)Instantiate(destructableRef, transform.position, Quaternion.Euler(currRot));
 
         Destroy(gameObject);
     }
