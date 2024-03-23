@@ -152,6 +152,7 @@ public class playerMove1 : MonoBehaviour
         spline.ReorderSpline(i - 1, i);
         Debug.Log(i + " moved to " + (i - 1));
     }
+        splineLength = spline.CalculateLength();
    }
 
    private void reverse()
