@@ -8,11 +8,20 @@ using UnityEngine;
 using UnityEngine.Splines;
 using UnityEngine.UIElements;
 
+//
+//
+//
+//
+//Too lazy to fully comment this right now. I'll get to it
+//
+//
+//
 public class playerMove1 : MonoBehaviour
 {
    [SerializeField] SplineContainer spline; //Spline used
    [SerializeField] float speed; //Speed of spline traversal
    [SerializeField] GameObject pathSprite; //sprite to use when drawing visible path
+   [SerializeField] ParticleSystem shipTrail; //trail particle system
 
    
    private float distancePercentage = 0f; //Percentage of the time it takes to complete the spline
@@ -32,6 +41,7 @@ public class playerMove1 : MonoBehaviour
 
    private void Start()
    {
+    shipTrail.Stop();
     splineLength = spline.CalculateLength();
     numSplines = spline.Splines.Count;
    }
@@ -46,6 +56,7 @@ public class playerMove1 : MonoBehaviour
     {
         if(planetValue > 0)
         {
+            shipTrail.Play();
             planetValue -= 1;
             if(justMovedBack)
             {
@@ -65,6 +76,7 @@ public class playerMove1 : MonoBehaviour
     {
         if(planetValue < numSplines)
         {
+            shipTrail.Play();
             planetValue += 1;
             if(planetValue > highestPlanetReached)
             {
@@ -109,6 +121,7 @@ public class playerMove1 : MonoBehaviour
     }
     if (distancePercentage > 1f) //Loops spline
     {
+        shipTrail.Stop();
         isMoving = false;
         plottingCourse = false;
     }

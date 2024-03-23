@@ -1,0 +1,919 @@
+fileFormatVersion: 2
+guid: 25d0ff47cf00e8e4ca040575f75c0e09
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fart_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2491.6667
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935378d9e978df349bd0f7015abc3365
+      internalID: -1543551381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_1
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 2491.6667
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcb6cc698ab941468978f70b6298376
+      internalID: 995296621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_2
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 2491.6667
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1e43779016ee54ea67d8fadf2061c0
+      internalID: -376086388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_3
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 2491.6667
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f725c0d716345bd40b781cc286927e2d
+      internalID: -1306450054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_4
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 2491.6667
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d100dbc49104f45ba4dfb5b4dba7b9
+      internalID: -1478229996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_5
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 2491.6667
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c678cc665c6e140b361588822fd848
+      internalID: 1552570540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1993.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4179f868ff7306b4ba7b54445b0c282f
+      internalID: -247596495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_7
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1993.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f551f3753122a43a224a5409e11cc8
+      internalID: -2059113063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_8
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1993.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dadaa96859d02498e14f2e5fe666a5
+      internalID: 655698509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_9
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1993.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861176b40a45bd34299da459f6ba83bb
+      internalID: 67940605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_10
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 1993.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d919e7e0d8179be43af52bd5f605fdc5
+      internalID: -2069029644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_11
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 1993.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1fdbc07ddbf0e4ba1f36468fd1b616
+      internalID: 137439617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1495.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600dcdba8d2173548a0080aeb5fe5820
+      internalID: 1770795493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_13
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1495.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a23b2531f4943498f9355a5aa7fdbe
+      internalID: -2067351521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_14
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1495.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9dd9ba8e67189b48a8dab1103de6e80
+      internalID: -545133596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_15
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1495.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17daac64a009c2e4cafea7a7d75f409c
+      internalID: 10208582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_16
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 1495.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109ec913e0d116c4aa6104a1ccb9992b
+      internalID: -1753092763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_17
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 1495.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec0b68a682306d4f905aaaa4dc87f15
+      internalID: -494832037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 997.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cef380039f572c4794e70c09d9f01b4
+      internalID: -531371057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_19
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 997.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55707e2f64760cf4b9d3bc7f761e469b
+      internalID: 734608279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_20
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 997.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bc595e684be334bb7cfe10f92bfddc
+      internalID: 119333704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_21
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 997.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0dd3aa0f187fe4cb87ae7ddeeab1fa
+      internalID: -799494212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_22
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 997.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d8f23e7f9f54843a5fae324909722f
+      internalID: -52602132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_23
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 997.6666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d3aad80f7f15d429b71061067261dd
+      internalID: 1989576470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 499.66666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b13740114bd2374288923e20a57905f
+      internalID: 1956095699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_25
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 499.66666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f46037ad80e8f459832e9ff2f1aa3c
+      internalID: 1421500283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_26
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 499.66666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c30c0dbd6969a47ad56657d783a7ec
+      internalID: -2098167807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_27
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 499.66666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715aea6f1a0a0c648ae23f0d42f6f817
+      internalID: 1435878662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_28
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 499.66666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53d2aada57600446988e931b2a8be58
+      internalID: 660967651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_29
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 499.66666
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afd8e5b37ce28442a724929d0e9bc20
+      internalID: 1907806876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.6666565
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9d8ca1027426c4abfd66d4ef08d763
+      internalID: 2040529816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_31
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1.6666565
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de23cb86df14bc44a9bb24328edd39ca
+      internalID: -1092260210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_32
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1.6666565
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76870bb7cb6e7204eb457e3136c42b1a
+      internalID: -1519108158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_33
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 1.6666565
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89556afc810bd24dac387161d29d72e
+      internalID: 156904584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_34
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 1.6666565
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6074465fa4a3f438d414695cb1cc8d
+      internalID: -1375137897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fart_35
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 1.6666565
+        width: 493.33334
+        height: 498.33334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8028ca232b5f1141b4b1a23e1c4d9fd
+      internalID: 1597429234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bae360aa5c0b1184e95df69822d5e8fe
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fart_0: -1543551381
+      fart_1: 995296621
+      fart_10: -2069029644
+      fart_11: 137439617
+      fart_12: 1770795493
+      fart_13: -2067351521
+      fart_14: -545133596
+      fart_15: 10208582
+      fart_16: -1753092763
+      fart_17: -494832037
+      fart_18: -531371057
+      fart_19: 734608279
+      fart_2: -376086388
+      fart_20: 119333704
+      fart_21: -799494212
+      fart_22: -52602132
+      fart_23: 1989576470
+      fart_24: 1956095699
+      fart_25: 1421500283
+      fart_26: -2098167807
+      fart_27: 1435878662
+      fart_28: 660967651
+      fart_29: 1907806876
+      fart_3: -1306450054
+      fart_30: 2040529816
+      fart_31: -1092260210
+      fart_32: -1519108158
+      fart_33: 156904584
+      fart_34: -1375137897
+      fart_35: 1597429234
+      fart_4: -1478229996
+      fart_5: 1552570540
+      fart_6: -247596495
+      fart_7: -2059113063
+      fart_8: 655698509
+      fart_9: 67940605
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
