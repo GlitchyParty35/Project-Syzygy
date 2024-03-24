@@ -6,6 +6,7 @@ using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Splines;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 //
@@ -22,6 +23,8 @@ public class playerMove1 : MonoBehaviour
    [SerializeField] float speed; //Speed of spline traversal
    [SerializeField] GameObject pathSprite; //sprite to use when drawing visible path
    [SerializeField] ParticleSystem shipTrail; //trail particle system
+   [SerializeField] string[] Destinations;
+   [SerializeField] Text DestinationText;
 
    
    private float distancePercentage = 0f; //Percentage of the time it takes to complete the spline
@@ -41,6 +44,7 @@ public class playerMove1 : MonoBehaviour
 
    private void Start()
    {
+    DestinationText.enabled = false;
     shipTrail.Stop();
     splineLength = spline.CalculateLength();
     numSplines = spline.Splines.Count;
@@ -50,6 +54,7 @@ public class playerMove1 : MonoBehaviour
    {
     if(isMoving)
     {
+        DestinationText.enabled = false;
         MoveOnSpline();
     }
     else if(Input.GetKeyDown(KeyCode.S))
@@ -97,6 +102,12 @@ public class playerMove1 : MonoBehaviour
             justMovedBack = false; 
         } 
     }
+    else if(Input.GetKeyDown(KeyCode.Space ))
+    {
+        string message = "Going to ";
+        DestinationText.text = (message + Destinations[planetValue]);
+        DestinationText.enabled = true;
+    }
    }
    
    private void MoveOnSpline()
@@ -125,14 +136,18 @@ public class playerMove1 : MonoBehaviour
         isMoving = false;
         plottingCourse = false;
     }
+    else
+    {
+        Vector3 nextPosition = spline.EvaluatePosition(distancePercentage + 0.05f); //Calculates position to look at. This is not for movement
+        Vector3 direction = nextPosition - currentPosition; //Finds direction to look at
+        
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;               
+        Quaternion rotation = Quaternion.Euler(0, 0, angle); //Using Quaternion.Euler because LookAt is fucking goofy or sumn
 
-    Vector3 nextPosition = spline.EvaluatePosition(distancePercentage + 0.05f); //Calculates position to look at. This is not for movement
-    Vector3 direction = nextPosition - currentPosition; //Finds direction to look at
+        transform.rotation = rotation;
+    }
     
-    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;               
-    Quaternion rotation = Quaternion.Euler(0, 0, angle); //Using Quaternion.Euler because LookAt is fucking goofy or sumn
     
-    transform.rotation = rotation;
    }
 
    private void splineForward()

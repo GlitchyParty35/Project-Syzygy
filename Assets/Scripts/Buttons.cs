@@ -21,7 +21,7 @@ public class Buttons : MonoBehaviour
 
     public void WorldMap()
     {
-        SceneManager.LoadScene("Map"); 
+        SceneManager.LoadScene("WorldMap"); 
     }
 
     public void MainMenu()
