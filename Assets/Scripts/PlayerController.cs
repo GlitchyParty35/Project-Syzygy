@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public float thrusterFuelMax = 100f; // Maximum fuel for mid-flight adjustments
     private float thrusterFuel; // Current fuel
-    private bool isMidFlight = false; // Is the player in mid-flight?
+    private bool isMidFlight = false; // Is the player in mid-flight?   
 
     public float initialThrust = 5f;
     public float maxThrust = 50f;
@@ -63,6 +63,8 @@ public class PlayerController : MonoBehaviour
             if (cooldownTimer >= cooldownTime)
             {
                 canLaunch = true;
+                isMidFlight = false;
+                thrusterFuel = thrusterFuelMax;
                 launchButton.LaunchState(canLaunch); //Update launch button UI
                 cooldownTimer = 0;
             }
@@ -81,11 +83,17 @@ public class PlayerController : MonoBehaviour
             
             if (adjustment != Vector2.zero && thrusterFuel > 0)
             {
-                rb.AddForce(adjustment, ForceMode2D.Force);
+                rb.AddForce(adjustment * 10, ForceMode2D.Force);
                 thrusterFuel -= adjustment.magnitude; // Consume fuel based on the magnitude of adjustment
+                //while (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Verticle") != 0) 
+                //{
+                   // thrusterFuel -=1;
+                //}
                 thrusterFuel = Mathf.Max(thrusterFuel, 0); // Ensure fuel doesn't go below 0
             }
             
+
+            /*        Disabled stationary recharge 
             // Check if the player is stationary to recharge fuel and allow for the next launch
             if (rb.velocity.magnitude < 0.1f) // Threshold to consider the ship as 'stationary'
             {
@@ -94,6 +102,8 @@ public class PlayerController : MonoBehaviour
                 thrusterFuel = thrusterFuelMax; // Recharge fuel
                 launchButton.LaunchState(canLaunch); // Update launch button UI
             }
+
+            */
         }
 
         // Only accept input if the ship has not been launched
@@ -110,6 +120,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.Space))
             {
                 canLaunch = false;
+                isMidFlight = true;
                 launchButton.LaunchState(canLaunch); //Update launch button UI
                 thrustMeter.updateMeter(0); //Reset thrust meter display after launch
                 rb.drag = 0.5f; // Adjust drag for gameplay

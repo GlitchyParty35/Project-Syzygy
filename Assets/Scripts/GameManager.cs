@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,9 +9,12 @@ public class GameManager : MonoBehaviour
 
     private int alignedShipsCount = 0;
     public int totalShipsToWin; // Set this in the inspector based on the level
+    public GameObject Player;
 
     void Awake()
     {
+        Player = GameObject.Find("Player");
+
         if (instance == null)
         {
             instance = this;
@@ -18,6 +22,14 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    void Update()
+    {
+        if (Player == null)
+        {
+            Invoke("Reset", 1.5f);
         }
     }
 
@@ -34,5 +46,10 @@ public class GameManager : MonoBehaviour
             Debug.Log("Win Condition Met!");
             // Trigger win state here (e.g., load next level, show win screen, etc.)
         }
+    }
+
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
