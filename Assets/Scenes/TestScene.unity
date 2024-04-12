@@ -1485,6 +1485,31 @@ MonoBehaviour:
         name: BOSS
         icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
       line: I hope your navigation training went well back on Earth.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: I love our space simulator; it only uses the most advanced technology
+        to date!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Well, now you're experiencing the real thing!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: I see the launch went well -- you're still here! Hehe...
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: It's nerve-racking, I know. But trust me, you're the best in our division.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: You'll be great!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Do you need a refresher on what exactly you're doing here?
   activeOnStart: 1
   delayTime: 1
 --- !u!4 &497419073
