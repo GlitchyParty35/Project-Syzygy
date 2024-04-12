@@ -1510,6 +1510,20 @@ MonoBehaviour:
         name: BOSS
         icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
       line: Do you need a refresher on what exactly you're doing here?
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Sure thing!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "I\u2019ll explain how you control the ship and how you'll navigate through
+        space."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Use the \u201CW,\u201D \u201CA,\u201D \u201CS,\u201D and \u201CD\u201D
+        keys to move your ship vertically and horizontally. "
   activeOnStart: 1
   delayTime: 1
 --- !u!4 &497419073
