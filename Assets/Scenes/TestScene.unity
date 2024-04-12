@@ -1524,6 +1524,28 @@ MonoBehaviour:
         icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
       line: "Use the \u201CW,\u201D \u201CA,\u201D \u201CS,\u201D and \u201CD\u201D
         keys to move your ship vertically and horizontally. "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Well done!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Now, hold \u201CQ\u201D to steer left and hold \u201CE\u201D to steer
+        right."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Yep, that's the way!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Now, are you aware that your ship has a thruster?
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "It\u2019s called \u201CBILLIARD MODE\u201D, and you can see its charge
+        in the bottom left-hand corner. "
   activeOnStart: 1
   delayTime: 1
 --- !u!4 &497419073
