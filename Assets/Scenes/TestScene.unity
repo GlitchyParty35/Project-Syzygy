@@ -1736,6 +1736,247 @@ MonoBehaviour:
         name: BOSS
         icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
       line: "Don\u2019t worry, you\u2019ll learn to dodge asteroids with ease. "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Oop! Look there \u2013 it's an asteroid!"
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Probably the first one you\u2019ve encountered so far."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'Use your keys (WASD, Q & E) to avoid it. '
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "See? There\u2019s nothing to it -- "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'Oh! Look out there, CAPTAIN! '
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Good job!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Asteroids usually come in clusters like that.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "You\u2019ll encounter a lot more of those. Don\u2019t let them get in
+        the way of your first objective!"
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Speaking of which ... asteroids aren\u2019t the only thing you need
+        to look out for. "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Speaking of which ... asteroids aren\u2019t the only thing you need
+        to look out for. "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'This is your ship... '
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: ...and this is a colony ship.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: There are other pilots roaming through space.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "And just like you, they\u2019re looking to find exoplanets that are
+        potentially inhabitable."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "It\u2019s your objective to be there, wherever they are, and help them
+        by joining them...literally! "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "This is when you use that special speed boost.\_"
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "This is when you use that special speed boost.\_"
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: You can push colony ships into one another using Billiard Mode.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "The more pilots you link, the better chance that they\u2019ll survive!"
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "You\u2019ll always encounter asteroids before the colony ships, though,
+        so worry about your own survival as well. "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Don\u2019t feel discouraged, though; you\u2019re dodging like a pro! "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "It\u2019s great practice, and it\u2019s good to have the experience... "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: ...
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'There you all are! Almost forgot about you... '
+    - character:
+        name: HAWK
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'Hey, BOSS! We late for the party? '
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'Just a little, HAWK. '
+    - character:
+        name: GARY
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Our apologies, sir.
+    - character:
+        name: GARY
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'I tried to rush everyone out for launch, but I guess they had some last-minute
+        things to do-- '
+    - character:
+        name: CHICO
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Aw, come on, GARY! You\u2019re always making us look like junkies just
+        so the BOSS can kiss your ass -- "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Hey. C\u2019mon, crew. We talked about this. "
+    - character:
+        name: CHICO
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Sorry, BOSS.
+    - character:
+        name: GARY
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: So sorry, sir.
+    - character:
+        name: HAWK
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Ready to serve, BOSS!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Great.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: So! These are your co-pilots, CAPTAIN.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: They can fly alongside you throughout your journey across space.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "I think you\u2019ll all get along well!"
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Now, let me remind you all about your mission: Your job is to find a
+        planet that\u2019s potentially suitable for human colonization."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: You should link any colony ships you find down your route as well.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: If you can find an exoplanet that can sustain life, then we can finalize
+        the project back on Earth.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "And, of course, you\u2019ll all be honored for your services."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: This mission is important not just for our space program, but for all
+        of humanity.
+    - character:
+        name: CHICO
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Amen, BOSS!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "But of course \u2013 and the rest of you know this \u2013 you can choose
+        to go alone if you want, CAPTAIN."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Your co-pilots can go back to base until they\u2019re needed. "
+    - character:
+        name: CHICO
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Yeah...
+    - character:
+        name: HAWK
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Fine to work when needed, CAPTAIN.
+    - character:
+        name: GARY
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Me as well.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'So, what do you say, CAPTAIN? You want your team with you? '
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'So, what do you say, CAPTAIN? You want your team with you? '
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'All right. Then are you ready to decide our future, CAPTAIN? '
+    - character:
+        name: HAWK
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'Yeah, CAPTAIN! '
+    - character:
+        name: CHICO
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Whoop-whoop!
+    - character:
+        name: GARY
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: I salute you, CAPTAIN!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Great! The three of you can go, and I\u2019ll be signing off for now."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "If you encounter anything that\u2019s too challenging for you, CAPTAIN,
+        just phone me or your mates for help."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: 'Good luck to all of you... especially you, CAPTAIN. '
   activeOnStart: 1
   delayTime: 1
 --- !u!4 &497419073
