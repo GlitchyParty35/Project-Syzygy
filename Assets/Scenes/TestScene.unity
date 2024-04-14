@@ -344,6 +344,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 419696597386804448, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 419696597386804448, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ab44aaac44bb2ac4ab5dac5c19fcd26a,
+        type: 3}
+    - target: {fileID: 1265219634678424639, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 17ca76df69b2b944bad29dd6ad1d2993,
+        type: 2}
+    - target: {fileID: 1265219634678424639, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4520139240168361622, guid: 17ca76df69b2b944bad29dd6ad1d2993,
+        type: 2}
+    - target: {fileID: 1265219634678424639, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712088019979761104, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712088019979761104, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.72156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712088019979761104, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.72156864
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712088019979761104, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.72156864
+      objectReference: {fileID: 0}
     - target: {fileID: 3128590999621655936, guid: 4a20c039a6d878c408d2fd15a0c63185,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -398,6 +446,115 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542930253576526781, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542930253576526781, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542930253576526781, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660098718187902187, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660098718187902187, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 17ca76df69b2b944bad29dd6ad1d2993,
+        type: 2}
+    - target: {fileID: 4660098718187902187, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660098718187902187, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4520139240168361622, guid: 17ca76df69b2b944bad29dd6ad1d2993,
+        type: 2}
+    - target: {fileID: 4660098718187902187, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098745960634372920, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098745960634372920, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098745960634372920, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6251273320244741362, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6251273320244741362, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313211136167079995, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313211136167079995, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313211136167079995, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313211136167079995, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313211136167079995, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683581588352031542, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 17ca76df69b2b944bad29dd6ad1d2993,
+        type: 2}
+    - target: {fileID: 8683581588352031542, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4520139240168361622, guid: 17ca76df69b2b944bad29dd6ad1d2993,
+        type: 2}
+    - target: {fileID: 8683581588352031542, guid: 4a20c039a6d878c408d2fd15a0c63185,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1546,6 +1703,39 @@ MonoBehaviour:
         icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
       line: "It\u2019s called \u201CBILLIARD MODE\u201D, and you can see its charge
         in the bottom left-hand corner. "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "You can activate a speed boost by pressing the \u201CSPACE\u201D bar."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: To gain a bigger boost, just hold down the key. Try it now!
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "If you didn\u2019t see it, the charge bar drains when the boost is used."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "You should be mindful of asteroids while you\u2019re speeding ahead."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Don\u2019t go crazy, or else you could crash and deal damage to your
+        ship! "
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "You can monitor the ship\u2019s health with the other bar."
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: Every asteroid you hit will cause the bar to drain bit by bit.
+    - character:
+        name: BOSS
+        icon: {fileID: 734608279, guid: 25d0ff47cf00e8e4ca040575f75c0e09, type: 3}
+      line: "Don\u2019t worry, you\u2019ll learn to dodge asteroids with ease. "
   activeOnStart: 1
   delayTime: 1
 --- !u!4 &497419073
